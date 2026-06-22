@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -34,13 +34,24 @@
     padding: 36px 5vw 24px;
     border-bottom: 1px solid rgba(245,241,232,0.08);
   }
+  .header-meta{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .school-logo{
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
   .eyebrow{
     font-family:'JetBrains Mono', monospace;
     font-size: 12px;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--teal);
-    margin-bottom: 10px;
   }
   h1{
     font-family:'Space Grotesk', sans-serif;
@@ -265,7 +276,10 @@
 <body>
 
 <header>
-  <div class="eyebrow">高中數學 · 互動單元</div>
+  <div class="header-meta">
+    <img class="school-logo" src="https://www.nths.kh.edu.tw/images/nths_s.png" alt="高雄市立楠梓高級中學 Logo">
+    <div class="eyebrow">楠梓高中 · 高中數學 · 互動單元</div>
+  </div>
   <h1>函數實驗室 — 拖動係數，看見<span>圖形</span>變化</h1>
   <p>每種函數都由幾個係數決定形狀與位置。拖動右側滑桿，觀察函數式、圖形與定義域 / 值域如何隨之改變。</p>
 </header>
